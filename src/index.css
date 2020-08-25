@@ -1,13 +1,180 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+/*font-family: 'Do Hyeon', sans-serif;*/
+*{
+    box-sizing: border-box;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+body{
+    margin: 0;
+    background: burlywood;
+    background: linear-gradient(to right, tomato, burlywood, tomato);
+    background-repeat: none;
+    color: #333;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.head{
+    width: 320px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+.head img{
+    width: 75px;
+}
+.head h1{
+    margin: 15px 0;
+    color: #121212;
+}
+.calci{
+    background: crimson;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+}
+#displayLess{
+    height: 30px;
+    width: 300px;
+    outline: none;
+    background: burlywood;
+    border-top: 2px solid #222;
+    border-left: 2px solid #222;
+    border-right: 2px solid #222;
+    border-bottom: 0;
+    text-align: right;
+    padding: 5px;
+    font-family: 'Do Hyeon', sans-serif;
+    color: #444;
+    margin: 0px auto;
+    font-size: 1.2em;
+}
+#display{
+    height: 40px;
+    width: 300px;
+    outline: none;
+    background: burlywood;
+    border-top: 0;
+    border-bottom: 2px solid #222;
+    border-left: 2px solid #222;
+    border-right: 2px solid #222;
+    text-align: right;
+    padding: 5px;
+    font-family: 'Do Hyeon', sans-serif;
+    color: #222;
+    margin: 0px auto;
+    font-size: 2em;
+}
+#clear{
+    border: 1px solid crimson;
+    background: orangered;
+    color: #FFF;
+    width: 150px;
+    padding: 10px;
+    outline: none;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.6em;
+}
+#clear:hover{
+    background: red;
+    color: #333;
+    cursor: pointer;
+}
+#clear:active{
+    transform: scale(0.98);
+}
+#zero{
+    border: 1px solid crimson;
+    background: coral;
+    color: #FFF;
+    width: 150px;
+    padding: 10px;
+    outline: none;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.6em;
+}
+#zero:hover{
+    background: tomato;
+    color: #333;
+    cursor: pointer;
+}
+#zero:active{
+    transform: scale(0.98);
+}
+#divide, #multiply, #add, #subtract{
+    border: 1px solid crimson;
+    background: rgb(245, 105, 54);
+    color: #FFF;
+    width: 75px;
+    padding: 10px;
+    outline: none;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.6em;
+}
+#divide:hover, #multiply:hover, #add:hover, #subtract:hover{
+    background: rgb(248, 79, 49);
+    color: #333;
+    cursor: pointer;
+}
+#divide:active, #multiply:active, #add:active, #subtract:active{
+    transform: scale(0.98);
+}
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #decimal{
+    border: 1px solid crimson;
+    background: coral;
+    color: #FFF;
+    width: 75px;
+    padding: 10px;
+    outline: none;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.6em;
+}
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover,#six:hover,#seven:hover,#eight:hover, #nine:hover, #decimal:hover{
+    background: tomato;
+    color: #333;
+    cursor: pointer;
+}
+#one:active, #two:active, #three:active, #four:active, #five:active,#six:active,#seven:active,#eight:active, #nine:active, #decimal:active{
+    transform: scale(0.98);
+}
+#equals{
+    position: absolute;
+    border: 1px solid crimson;
+    background: #00D09C;
+    color: #FFF;
+    width: 75px;
+    height: 108px;
+    padding: 10px;
+    outline: none;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 2em;
+}
+#equals:hover{
+    background: #08b388;
+    color: #333;
+    cursor: pointer;
+}
+#equals:active{
+    transform: scale(0.98);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.foot{
+    width: 320px;
+    text-align: center;
+    margin: 0px auto;
+}
+.foot h6{
+    display: inline-block;
+    font-size: 1em;
+}
+.name{
+    margin-left: 5px;
+    color: crimson;
 }
